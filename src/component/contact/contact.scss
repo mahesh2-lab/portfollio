@@ -26,9 +26,10 @@
         position: relative;
 
         .phoneSvg{
-            stroke: rgb(255, 5, 5);
+            stroke: orange;
             position: absolute;
             margin: auto;
+            z-index: -1;
         }
 
         form {
