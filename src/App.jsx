@@ -14,13 +14,13 @@ function App() {
           <NavBar />
           <Hero />
         </section>
-        <section id="Services">
+        <section id="About">
           <Parallax type="services" />
         </section>
         <section>
           <AboutMe />
         </section>
-        <section id="Portfolio">
+        <section id="Projects">
           <Parallax type="portfolio" />
         </section>
         <Portfolio/>

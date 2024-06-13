@@ -30,10 +30,9 @@ export const Links = () => {
 
   const items = [
     "Home",
-    "Services",
-    "Portfolio",
-    "Contact",
-    "About"
+    "About",
+    "Projects",
+    "Contact"
   ]
 
   return (

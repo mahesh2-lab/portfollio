@@ -22,14 +22,8 @@ const NavBar = () => {
             ></lord-icon>
           </motion.span>
           <div className="social">
-            <a href="https://www.facebook.com/">
-              <img src="" alt="" srcSet="facebook.png" />
-            </a>
             <a href="https://www.twitter.com/">
               <img src="" alt="" srcSet="twitter.png" />
-            </a>
-            <a href="https://www.youtube.com/">
-              <img src="" alt="" srcSet="github.png" />
             </a>
             <a href="https://www.linkedin.com/">
               <img src="" alt="" srcSet="linkedin.png" />

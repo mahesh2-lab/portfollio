@@ -1,16 +1,15 @@
-.hero{
+.hero {
     height: calc(100vh - 100px);
     overflow: hidden;
-    background: linear-gradient(180deg, #0c0c1d , #111132);
+    background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative;
 
-    .wrapper{
+    .wrapper {
         max-width: 1080px;
         height: 100%;
         margin: auto;
 
-
-        .textContainer{
+        .textContainer {
             width: 50%;
             height: 100%;
             display: flex;
@@ -18,51 +17,64 @@
             justify-content: center;
             gap: 40px;
 
-
-            h2{
+            h2 {
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
             }
 
-            h1{
+            h1 {
                 font-size: 60px;
-                
             }
 
-            .buttons{
-                button{
-                    padding: 20px;
-                    border: 1px solid white;
-                    border-radius: 10px;
-                    background: transparent;
-                    color: white;
-                    margin-right: 20px;
-                    cursor: pointer;
-                    font-weight: 300;
+            .buttons {
+                width: 30%;
+                cursor: pointer;
+                z-index: 20;
+                position: relative;
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                    padding: 5px;
+                    border: 1px solid #ffffff00;
+                    transition: all 0.5s;
+                }
+                lord-icon {
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid #ffffff00;
+                    transition: all 0.5s;
+                }
+                img:hover {
+                    border-radius: 25px;
+                    border-color: #670000 ;
+                    border: 1px solid #fff;
+                }
+                lord-icon:hover {
+                    border-radius: 25px;
+                    border-color: #670000 ;
+                    border: 1px solid #fff;
                 }
             }
 
-            img{
+            img {
                 width: 50px;
             }
-
         }
     }
 
-    .imageContainer{
+    .imageContainer {
         height: 100%;
         position: absolute;
-        top: -160px;
-        right: -150px;
-        
-
-        img{
-           scale: 0.70;
-        }
+        top: -140px;
+        right: -50px;
     }
 
-    .slidingTextContainer{
+    .slidingTextContainer {
         position: absolute;
         font-size: 50vh;
         bottom: -60px;
@@ -71,5 +83,4 @@
         width: 50%;
         font-weight: bold;
     }
-
 }

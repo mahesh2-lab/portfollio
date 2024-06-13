@@ -47,6 +47,9 @@ const AboutMe = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 1.8s",
               transitionDelay: "0.4s",
+              lineHeight:"20px",
+              letterSpacing: "1px",
+              fontWeight: "100"
             }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
