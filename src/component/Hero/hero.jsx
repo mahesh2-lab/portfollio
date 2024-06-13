@@ -106,7 +106,7 @@ const Hero = () => {
           }}
         >
           <lord-icon
-            src="/src/assets/Animation.json"
+            src="/Animation.json"
             trigger="loop"
             style={{ width: 800, height: 800 }}
           ></lord-icon>
