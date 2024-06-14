@@ -52,18 +52,7 @@ const AboutMe = () => {
               fontWeight: "100"
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum quos, tempore, quibusdam, quas quod illo dolorum
-            repudiandae eum magni doloremque. Quisquam voluptatum quos, tempore,
-            quibusdam, quas quod illo dolorum repudiandae eum magni doloremque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum quos, tempore, quibusdam, quas quod illo dolorum
-            repudiandae eum magni doloremque. Quisquam voluptatum quos, tempore,
-            quibusdam, quas quod illo dolorum repudiandae eum magni doloremque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum quos, tempore, quibusdam, quas quod illo dolorum
-            repudiandae eum magni doloremque. Quisquam voluptatum quos, tempore,
-            quibusdam, quas quod illo dolorum repudiandae eum magni doloremque.
+           Hello! I'm Mahesh Sunil Chopade, a passionate student of Computer Science and Engineering with a keen interest in web development. Aspiring to bridge the gap between creativity and functionality, I immerse myself in the dynamic world of coding to craft innovative digital experiences. From conceptualizing designs to bringing them to life with precision and elegance, I thrive on the challenges of turning ideas into interactive realities. Join me on this journey as we explore the boundless possibilities of the digital landscape together.
           </p>
         </div>
       </div>
