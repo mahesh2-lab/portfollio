@@ -5,31 +5,31 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "3D Object Maker",
-    img: "https://3dobjectmaker.web-project.me/",
-    url: "https://3dobjectmaker.web-project.me/",
-    desc: "The 3D Object Maker is a software tool designed to help users create, edit, and manipulate 3D objects easily. It is suitable for beginners and advanced users, supporting 3D printing, game development, animation, and virtual reality.",
+    title: "Funcky Code",
+    url: "https://funcky-code.vercel.app/",
+    img: "https://private-user-images.githubusercontent.com/65208771/370644495-0165bc39-2ac0-4138-966a-091be9f99b19.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5ODY5NDQsIm5iZiI6MTczMzk4NjY0NCwicGF0aCI6Ii82NTIwODc3MS8zNzA2NDQ0OTUtMDE2NWJjMzktMmFjMC00MTM4LTk2NmEtMDkxYmU5Zjk5YjE5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjEyVDA2NTcyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZhNzM0ZDVkOWRlYjAzODAxN2YyZmZmZThjNTlhMTkwZjIyZGFmODU2Y2E4YWFjYzQ5NDNmMDJjNTZhZmI0YzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Bw5roWmIHsAXu-GsJWmXSo45gBfIfHXTcaFAuPanzXM",
+    desc: "An online tool to generate code snippets for various programming languages and frameworks, making development faster and easier.",
   },
   {
     id: 2,
-    title: "Mobile App",
-    img: "https://chatapp.web-project.me/",
-    url: "https://3dobjectmaker.web-project.me/",
-    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    title: "Chat react App",
+    url: "https://chatapp.web-project.me/",
+    img: "/project/chatapp.gif",
+    desc: "A real-time chat application that allows users to create rooms and chat with each other.",
   },
   {
     id: 3,
-    title: "Web App",
-    img: "https://images.pexels.com/photos/24879586/pexels-photo-24879586/free-photo-of-a-wooden-cabin-in-the-mountains-with-mountains-in-the-background.jpeg",
-    url: "",
-    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    title: "Caffeine",
+    img: "/project/caffine.png",
+    url: "https://mahesh2-lab.github.io/Caffeine/",
+    desc: "A simple and elegant landing page for a coffee shop.",
   },
   {
     id: 4,
-    title: "Mobile App",
-    img: "https://images.pexels.com/photos/6068771/pexels-photo-6068771.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    title: "Herguard",
+    img: "/project/herguard.gif",
     url: "",
-    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    desc: "A security guard management system that allows users to manage their security guards and their shifts.",
   },
 ];
 
@@ -47,7 +47,7 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imgContainer" ref={ref}>
-            <iframe src={item.img} frameborder="0" />
+            {item.img ? <img src={item.img} /> : <iframe src={item.url} frameborder="0" />}
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>

@@ -1,86 +1,117 @@
+@import "../../App.scss";
+
 .hero {
-    height: calc(100vh - 100px);
-    overflow: hidden;
-    background: linear-gradient(180deg, #0c0c1d, #111132);
-    position: relative;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
 
-    .wrapper {
-        max-width: 1080px;
-        height: 100%;
-        margin: auto;
+  .wrapper {
+    max-width: 1080px;
+    height: 100%;
+    margin: auto;
 
-        .textContainer {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 40px;
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
 
-            h2 {
-                font-size: 30px;
-                color: rebeccapurple;
-                letter-spacing: 10px;
-            }
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
 
-            h1 {
-                font-size: 60px;
-            }
+      h2 {
+        font-size: 30px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+      }
 
-            .buttons {
-                width: 30%;
-                cursor: pointer;
-                z-index: 20;
-                position: relative;
-                display: flex;
-                gap: 10px;
-                justify-content: space-between;
+      h1 {
+        font-size: 60px;
 
-                img {
-                    width: 45px;
-                    height: 45px;
-                    padding: 5px;
-                    border: 1px solid #ffffff00;
-                    transition: all 0.5s;
-                }
-                lord-icon {
-                    width: 45px;
-                    height: 45px;
-                    border: 1px solid #ffffff00;
-                    transition: all 0.5s;
-                }
-                img:hover {
-                    border-radius: 25px;
-                    border-color: #670000 ;
-                    border: 1px solid #fff;
-                }
-                lord-icon:hover {
-                    border-radius: 25px;
-                    border-color: #670000 ;
-                    border: 1px solid #fff;
-                }
-            }
-
-            img {
-                width: 50px;
-            }
+        @include mobile {
+          font-size: 36px;
         }
+      }
+
+      .buttons {
+        width: 30%;
+        cursor: pointer;
+        z-index: 20;
+        position: relative;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+
+        img {
+          width: 45px;
+          height: 45px;
+          padding: 5px;
+          border: 1px solid #ffffff00;
+          transition: all 0.5s;
+        }
+        lord-icon {
+          width: 45px;
+          height: 45px;
+          border: 1px solid #ffffff00;
+          transition: all 0.5s;
+        }
+        img:hover {
+          border-radius: 25px;
+          border-color: #670000;
+          border: 1px solid #fff;
+        }
+        lord-icon:hover {
+          border-radius: 25px;
+          border-color: #670000;
+          border: 1px solid #fff;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .lord-icon {
+      width: 800px;
+      height: 800px;
+
+      @include mobile {
+        width: 400px;
+        height: 400px;
+      }
     }
 
-    .imageContainer {
-        height: 100%;
-        position: absolute;
-        top: -140px;
-        right: -50px;
+    @include mobile {
+    //   right: -150px;
+    top: 300px;
+      bottom: 0;
     }
+  }
 
-    .slidingTextContainer {
-        position: absolute;
-        font-size: 50vh;
-        bottom: -60px;
-        white-space: nowrap;
-        color: #ffffff09;
-        width: 50%;
-        font-weight: bold;
-    }
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -60px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+  }
 }

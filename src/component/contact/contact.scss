@@ -1,59 +1,93 @@
+@import "../../App.scss";
+
 .contact {
-    height: 100%;
-    max-width: 1080px;
-    margin: auto;
+  height: 100%;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    flex: 1;
     display: flex;
-    align-items: center;
-    gap: 50px;
+    flex-direction: column;
+    gap: 40px;
 
-    .textContainer {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-
-        h1 {
-            font-size: 100px;
-            line-height: 88px;
-        }
-
-        span {
-            font-weight: 300;
-        }
+    @include mobile {
+      text-align: center;
+      gap: 20px;
+      align-items: center;
+      margin-top: 70px;
     }
-    .formContainer {
-        flex: 1;
-        position: relative;
 
-        .phoneSvg{
-            stroke: orange;
-            position: absolute;
-            margin: auto;
-            z-index: -1;
-        }
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            input,
-            textarea {
-                padding: 20px;
-                border: 1px solid #fff;
-                background-color: transparent;
-                color: #fff;
-                border-radius: 5px;
-            }
-            button {
-                padding: 20px;
-                border: none;
-                background-color: orange;
-                cursor: pointer;
-                font-weight: 500;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        }
+      @include mobile {
+        font-size: 36px;
+        line-height: 40px;
+      }
     }
+
+    span {
+      font-weight: 300;
+    }
+  }
+  .formContainer {
+    flex: 1;
+    position: relative;
+
+    @include mobile {
+        padding: 50px;
+      width: 100%;
+    }
+
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input,
+      textarea {
+        padding: 20px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 5px;
+      }
+      button {
+        padding: 20px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"] {
+        padding: 20px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
 }

@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .portfolio {
     position: relative;
 
@@ -9,6 +11,11 @@
         text-align: center;
         color: chartreuse;
         font-size: 30px;
+
+        @include mobile {
+           padding-top: calc(100vh - 100px);
+           font-size: 24px;
+        }
 
         .progessBar {
             height: 10px;
@@ -24,7 +31,7 @@
         overflow: hidden;
 
         .wrapper {
-            max-width: 1080px;
+            max-width:1366px;
             height: 100%;
             margin: auto;
             display: flex;
@@ -32,13 +39,34 @@
             justify-content: center;
             gap: 50px;
 
+            @include mobile {
+                flex-direction: column;
+                
+            }
+
             .imgContainer {
-                flex: 1;
+                flex: 2;
                 height: 50%;
+
+                @include mobile {
+                    width: 100%;
+                    max-height: 300px;
+                }
+
+
                 iframe {
                     width: 100%;
                     height: 100%;
                    
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                    @include mobile {
+                       object-fit: contain;
+                    }
                 }
             }
             .textContainer {
@@ -47,13 +75,28 @@
                 flex-direction: column;
                 gap: 30px;
 
+                @include mobile {
+                  transform: none !important;
+                  padding: 10px;
+                  align-items: center;
+                    text-align: center;
+                }
+
                 h2{
                     font-size: 72px;
+
+                    @include mobile {
+                        font-size: 36px;
+                    }
 
                 }
                 p {
                     font-size: 20px;
                     color: grey;
+
+                    @include mobile {
+                        font-size: 16px;
+                    }
                 }
 
                 button{

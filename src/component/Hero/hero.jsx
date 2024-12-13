@@ -74,7 +74,11 @@ const Hero = () => {
             >
               <img src="/npm.svg" alt="" />
             </motion.a>
-            <motion.a href="https://read.cv/mahesh2lab" target="_blank" variants={textVarient}>
+            <motion.a
+              href="https://read.cv/mahesh2lab"
+              target="_blank"
+              variants={textVarient}
+            >
               <img src="/download.svg" alt="" />
             </motion.a>
           </motion.div>
@@ -105,11 +109,13 @@ const Hero = () => {
             duration: 20,
           }}
         >
-          <lord-icon
-            src="/Animation.json"
-            trigger="loop"
-            style={{ width: 800, height: 800 }}
-          ></lord-icon>
+          <div className="lord-icon">
+            <lord-icon
+              src="/Animation.json"
+              trigger="loop"
+              style={{ width: "100%", height: "100%" }}
+            ></lord-icon>
+          </div>
         </motion.div>
       </div>
     </div>

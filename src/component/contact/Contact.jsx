@@ -98,7 +98,9 @@ const Contact = () => {
         </motion.div>
         <motion.form
           ref={formRef}
-          onSubmit={sendEmail}
+          // onSubmit={sendEmail}
+          action="https://formsubmit.co/maheshchopade133@gmail.com"
+          method="POST"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
@@ -106,9 +108,7 @@ const Contact = () => {
           <input type="text" required placeholder="Name" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>
           <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          <input type="submit" value={"Submit"}/>
         </motion.form>
       </div>
     </motion.div>
