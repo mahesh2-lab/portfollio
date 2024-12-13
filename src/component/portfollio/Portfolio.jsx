@@ -7,7 +7,7 @@ const items = [
     id: 1,
     title: "Funcky Code",
     url: "https://funcky-code.vercel.app/",
-    img: "https://private-user-images.githubusercontent.com/65208771/370644495-0165bc39-2ac0-4138-966a-091be9f99b19.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5ODY5NDQsIm5iZiI6MTczMzk4NjY0NCwicGF0aCI6Ii82NTIwODc3MS8zNzA2NDQ0OTUtMDE2NWJjMzktMmFjMC00MTM4LTk2NmEtMDkxYmU5Zjk5YjE5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjEyVDA2NTcyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZhNzM0ZDVkOWRlYjAzODAxN2YyZmZmZThjNTlhMTkwZjIyZGFmODU2Y2E4YWFjYzQ5NDNmMDJjNTZhZmI0YzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Bw5roWmIHsAXu-GsJWmXSo45gBfIfHXTcaFAuPanzXM",
+    img: "/project/funckycode.png",
     desc: "An online tool to generate code snippets for various programming languages and frameworks, making development faster and easier.",
   },
   {
