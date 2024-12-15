@@ -47,12 +47,12 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imgContainer" ref={ref}>
-            {item.img ? <img src={item.img} /> : <iframe src={item.url} frameborder="0" />}
+            {item.img ? <img src={item.img} alt={item.title} /> : <iframe src={item.url} frameborder="0" />}
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button><a href={item.url} target="_blank">see more</a></button>
+            <button><a href={item.url} target="_blank">Go here</a></button>
           </motion.div>
         </div>
       </div>

@@ -1,0 +1,9 @@
+# robots.txt for React Website
+User-agent: *
+Allow: /
+
+# Disallow specific paths if needed
+Disallow: /private/
+
+# Specify sitemap (if available)
+Sitemap: https://yourwebsite.com/sitemap.xml

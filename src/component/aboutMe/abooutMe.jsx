@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <div className="aboutme">
       <div className="imagecontainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero.png" alt="Hero Image" />
       </div>
       <div className="wrapper" ref={ref}>
         <div

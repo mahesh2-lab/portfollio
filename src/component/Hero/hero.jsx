@@ -57,14 +57,14 @@ const Hero = () => {
               target="_blank"
               variants={textVarient}
             >
-              <img src="/github.svg" alt="" />
+              <img src="/github.svg" alt="GitHub" />
             </motion.a>
             <motion.a
               href="https://stackoverflow.com/users/20189194/bot-tech"
               target="_blank"
               variants={textVarient}
             >
-              <img src="/stack.svg" alt="" />
+              <img src="/stack.svg" alt="Stack Overflow" />
             </motion.a>
 
             <motion.a
@@ -72,20 +72,20 @@ const Hero = () => {
               target="_blank"
               variants={textVarient}
             >
-              <img src="/npm.svg" alt="" />
+              <img src="/npm.svg" alt="NPM" />
             </motion.a>
             <motion.a
               href="https://read.cv/mahesh2lab"
               target="_blank"
               variants={textVarient}
             >
-              <img src="/download.svg" alt="" />
+              <img src="/download.svg" alt="Read CV" />
             </motion.a>
           </motion.div>
           <motion.img
             animate="scrollButton"
             src="/scroll.png"
-            alt=""
+            alt="Scroll down"
             variants={textVarient}
           />
         </motion.div>
