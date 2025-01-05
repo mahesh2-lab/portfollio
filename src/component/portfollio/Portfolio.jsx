@@ -28,8 +28,15 @@ const items = [
     id: 4,
     title: "Herguard",
     img: "/project/herguard.gif",
-    url: "",
+    url: "https://herguard.web-project.me/",
     desc: "A security guard management system that allows users to manage their security guards and their shifts.",
+  },
+  {
+    id: 5,
+    title: "SaltTechno-Clone",
+    img: "/project/salttechno.gif",
+    url: "https://mahesh2-lab.github.io/SaltTechno-Clone/",
+    desc: "A website for a software company that provides services like web development, mobile app development, and digital marketing.",
   },
 ];
 
@@ -52,7 +59,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button><a href={item.url} target="_blank">Go here</a></button>
+            <a href={item.url} target="_blank"><button>Go here</button></a>
           </motion.div>
         </div>
       </div>

@@ -1,0 +1,129 @@
+@import "../../App.scss";
+
+.portfolio {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: chartreuse;
+    font-size: 30px;
+
+    @include mobile {
+      padding-top: calc(100vh - 100px);
+      font-size: 24px;
+    }
+
+    .progess_Bar {
+        position: relative;
+        top: 0;
+   
+      
+      width: 10px;
+      height: 100vh;
+      background-color: grey;
+    
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper_ {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .imgContainer {
+        flex: 2;
+        height: 50%;
+
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+        }
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+          @include mobile {
+            object-fit: contain;
+          }
+        }
+      }
+      .text-Container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 72px;
+
+          @include mobile {
+            font-size: 36px;
+          }
+        }
+        p {
+          font-size: 20px;
+          color: grey;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+
+        button {
+          background-color: orange;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+        }
+      }
+     
+    }
+  }
+ 
+}
+.hover-Info {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform: translate( -50%, -50%);
+  background-color: #e3e3e3;
+  z-index: 9999;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

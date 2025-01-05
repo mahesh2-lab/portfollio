@@ -5,6 +5,7 @@ import Parallax from "./component/Parallax/Parallax";
 import AboutMe from "./component/aboutMe/abooutMe";
 import Contact from "./component/contact/Contact";
 import Portfolio from "./component/portfollio/Portfolio";
+import Timeline from "./component/Timeline/timeline";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <section>
           <AboutMe />
         </section>
+        <Timeline />
         <section id="Projects">
           <Parallax type="portfolio" />
         </section>
