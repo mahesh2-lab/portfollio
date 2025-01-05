@@ -12,7 +12,6 @@ import Timeline from "./component/Timeline/timeline";
 function App() {
   return (
     <>
-<<<<<<< HEAD
       <div>
         <section id="Home">
           <NavBar />
@@ -32,32 +31,6 @@ function App() {
         <section id="Contact">
           <Contact />
         </section>
-=======
-
-      <div id="app">
-        <CursorContextProvider>
-          {/* <Cursor /> */}
-          <div>
-            <section id="Home">
-              <NavBar />
-              <Hero />
-            </section>
-            <section id="About">
-              <Parallax type="services" />
-            </section>
-            <section>
-              <AboutMe />
-            </section>
-            <section id="Projects">
-              <Parallax type="portfolio" />
-            </section>
-            <Portfolio />
-            <section id="Contact">
-              <Contact />
-            </section>
-          </div>
-        </CursorContextProvider>
->>>>>>> e07f48f09fd2ae8e1b8591356ba612d482c54e16
       </div>
     </>
   );
